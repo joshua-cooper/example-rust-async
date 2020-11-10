@@ -1,0 +1,17 @@
+[package]
+name = "async-rust-example"
+version = "0.1.0"
+authors = ["Joshua Cooper <j@cooper.cx>"]
+edition = "2018"
+
+[dependencies]
+tokio = { version = "0.3", features = ["full"] }
+async-std = { version = "1", features = ["unstable", "attributes"] }
+
+[[bin]]
+name = "tokio"
+path = "src/tokio.rs"
+
+[[bin]]
+name = "async-std"
+path = "src/async-std.rs"
